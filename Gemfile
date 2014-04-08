@@ -4,6 +4,7 @@ source 'http://rubygems.org'
 
 gem 'rake'
 gem 'middleman-gh-pages'
+gem 'kramdown'
 gem "middleman", "~>3.1.6"
 
 # Live-reloading plugin
