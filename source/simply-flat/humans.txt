@@ -1,0 +1,8 @@
+/* Website theme was made by Northify, a web development firm in Anaheim Hills CA */
+/* northify.com */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Flexslider by woothemes
+  Software: E-Texteditor
