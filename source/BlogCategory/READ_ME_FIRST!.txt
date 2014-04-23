@@ -6,7 +6,7 @@ Bootstrap 3.0.
 -----------------
 - templates
 - themes  -----------------------------------------------
-- skins  -------> on => http://www.bootstraptor.com <==
+- skins  -------> on => http://www.yoursite.com <==
 ---------------------------------------------------------
 
 Uprgader Bootstrap 3.0. online service free http://bootstrap3.kissr.com/

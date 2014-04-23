@@ -38,4 +38,4 @@ you will need to purchase licensed for under the appropriate software developer.
 For example, to use the plugin Isotope for commercial purposes please read the terms of use 
 http://isotope.metafizzy.co/docs/license.html
 
-http://www.bootstraptor.com
+http://www.yoursite.com

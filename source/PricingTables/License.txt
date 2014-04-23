@@ -19,4 +19,4 @@ not to spread the line items and the entire archive to free access!
 If you are in doubt about the use of the license, you can ask questions here:
 https://groups.google.com/forum/#!forum/bootstraptor
  
-More templates and themes for the Bootstrap version 3.0 on http://www.bootstraptor.com
+More templates and themes for the Bootstrap version 3.0 on http://www.yoursite.com
