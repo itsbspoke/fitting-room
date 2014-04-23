@@ -14,10 +14,12 @@ This template build on DevKit http://www.bootstraptor.com
     <meta name="author" content="">
 
 <!-- Le styles -->
-<!-- Latest compiled and minified CSS BS 3.0. -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-<!--<link href="assets/css/theme.css" rel="stylesheet">-->
+<!-- Latest compiled and minified CSS BS 3.0.
+<link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
 
+
+<link href="assets/css/theme3.css" rel="stylesheet">-->
+<link href="assets/css/theme.css" rel="stylesheet">
 <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 
 <!--[if lt IE 7]>
@@ -33,44 +35,39 @@ This template build on DevKit http://www.bootstraptor.com
 
 <style type="text/css">
       body {
-        padding-top: 0px;
+        padding-top: 50px;
         padding-bottom: 0px;
-		background:#e0e0e0;
+		
+		
       }
 		.wrapper{
-		max-width:1210px;
-		display:block;
-		margin-right:auto;
+		max-width:1170px;
 		margin-left:auto;
-		background:#fff;
+		margin-right:auto;
+		background:#0b0b0b;
+		border-left:1px solid(250,250,250, .2);
+		overflow:hidden;
+		-webkit-box-shadow: 0px 0px 30px rgba(0,0,0, .4);
+			-moz-box-shadow: 0px 0px 30px rgba(0,0,0, .4);
+				box-shadow: 0px 0px 30px rgba(0,0,0, .4);
+		
 	}
 	
-	.container{
-		padding:0px 20px;
-	}
+
+		.carousel-inner .item{
+		   max-height:550px;
+		   overflow:hidden;
+		}
+		.carousel-control .icon-prev, .carousel-control .icon-next	{
+			font-size:120px;
+		}
 	
 	.navbar {
 		margin-bottom: 0px;
-		border-radius:0px;
-		min-height:80px;
-		background:#fff;
-		padding-top:15px;
 	}
 
 	
-	header .jumbotron{
-		-webkit-border-radius: 0px;
-		-moz-border-radius: 0px;
-		border-radius: 0px;
-		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-		border-right:0px;
-		border-left:0px;
-		background-color:#358cce;
-		color:#fff;
-		margin-bottom:0px;
-	}	
+		
 	
 	 #foot-sec .jumbotron{
 		-webkit-border-radius: 0px;
@@ -85,38 +82,17 @@ This template build on DevKit http://www.bootstraptor.com
 		color:#fff;
 		margin-top:-40px;
 	}
-	section{
-		padding: 50px 0px 50px;
-	}
-	
-	#Section-1 {
-		background:#222;
-	}
-	
-	h1 {
-		font-size: 32.5px;
-	}
-	.attention h2, .attention h3{
-		font-size:30px;
-	}
-	
 
 	.thumbnail{
 		margin-bottom:30px;
 	}
 	
-	.thumbnail img{
-		min-width:100%;
-	}
 	footer{
 		padding-top:40px;
-		border-top:1px solid #dedede;
-		background:#282828;
-		color:#fff;
+		border-top:1px solid rgba(0,0,0, .3);
+
 	}
-	footer a{
-		color:#fff;
-	}
+	
 	.related-projects{
 		padding-top:20px;
 		margin-top:20px;
@@ -124,15 +100,17 @@ This template build on DevKit http://www.bootstraptor.com
 	}
 	
 	@media (max-width: 979px){
-		.navbar .btn-navbar {
-			margin-top:20px;
-		}
+		
 	}
 	
-	@media (max-width: 767px){
-		.container {
-			padding-right:20px;
-			padding-left:20px;
+	@media (max-width: 992px){
+		
+		body{
+			padding-top:0px;
+		}
+		.carousel-inner .item{
+			max-height:700px;
+			padding-bottom:50px;
 		}
 	}
 
@@ -163,10 +141,12 @@ This template build on DevKit http://www.bootstraptor.com
   
 <!-- MAIN WRAPPER class="wrapper" max-width="1110px"-->
 <div class="wrapper">
+
+
 <header id="head-top">	
 	<!-- NAVBAR-->
-<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+<nav class="navbar navbar-inverse" role="navigation">
+		
 	  <!-- Brand and toggle get grouped for better mobile display -->
 	  <div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -177,33 +157,197 @@ This template build on DevKit http://www.bootstraptor.com
 		</button>
 		<a class="navbar-brand" href="#">YOURSITE.COM</a>
 	  </div>
-
+		
 	  <!-- Collect the nav links, forms, and other content for toggling -->
-	  <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
-		<a class="btn btn-danger navbar-btn" href="#">SIGN UP</a>
-		<a class="btn btn-success navbar-btn" href="#">SIGN IN</a>
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+	  <ul class="nav navbar-nav">
+		   <li><a target="_blank" href="http://www.sitediscount.ru/bs3flatdarktheme/index.html">Elements page</a></li>
+		  <li><a href="#">Link 2</a></li>
+		  <li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">Action</a></li>
+			  <li><a href="#">Another action</a></li>
+			  <li><a href="#">Something else here</a></li>
+			  <li><a href="#">Separated link</a></li>
+			  <li><a href="#">One more separated link</a></li>
+			</ul>
+		  </li>
+		   <li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-reorder"></i></a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">Action</a></li>
+			  <li><a href="#">Another action</a></li>
+			  <li><a href="#">Something else here</a></li>
+			  <li><a href="#">Separated link</a></li>
+			  <li><a href="#">One more separated link</a></li>
+			</ul>
+		  </li>
+		</ul>
+		<div class="navbar-right">
+			<a class="btn btn-danger navbar-btn" href="#">SIGN UP</a>
+			<a class="btn btn-success navbar-btn" href="#">SIGN IN</a>
+		</div>
 	</div><!-- /.navbar-collapse --> 
-	</div>	
+
 </nav>
+	
 
     <!-- PAGE-HEADER-->
-	<div class="jumbotron">
+
+		<div id="myCarousel" class="carousel slide">
+     
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          
+          <div class="container">
+			<div class="row" >
+				<div class="visible-md visible-lg col-sm-5 col-lg-5 text-center">
+					<img src="images/hand.png" alt="First slide">
+				</div>
+				<div class=" col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1" style="padding-top:50px;">
+					<h1>Big bold call to action title</h1>
+						<p class="lead">Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. </p>
+						<p class="">Text regular paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. </p>
+						<div class="row" >
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+								<a class="btn btn-lg btn-primary" href="" title=""><img class="img-responsive" src="images/googleplay.png" alt="" ></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+								<a class="btn btn-lg btn-primary" href="" title=""><img class="img-responsive" src="images/appstore.png" alt="" ></a>
+							</div>
+						</div>
+				</div>
+			</div>
+          </div>
+        </div>
+        <div class="item">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-						<h1>Choose your pricing plan now!</h1>
+					<div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 text-right" style="padding-top:50px;">
+						<h1>Big bold call to action title</h1>
+						<p class="lead">Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. </p>
+						<p class="">Text regular paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. Text lead paragraph. Lorem ipsum dolor sit amet. </p>
+						<p><a class="btn btn-lg btn-danger" href="" title="">BUY AWESOME PRODUCT NOW!</a></p>
+					</div>
+					<div class="visible-md visible-lg col-md-5 col-lg-5 text-center">
+						<img src="images/hand.png" alt="First slide">
 					</div>
 				</div>
 			</div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="icon-prev"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="icon-next"></span></a>
     </div>
+
 </header>
 <!-- PAGE-HEADER-->
-
-
-<section id="Section-1">
 <div class="container">
+	<div class="row" style="padding-top:30px;">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+					<div class="page-header">
+						<h3>TAKE A LOOK TO AWESOME PRODUCT FEATURES!</h3>
+					</div>
+				</div>
+	
+	<!-- ITEM-->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="row">
+				<div class="text-center col-sm-2 col-lg-2">
+					<i class="icon-tablet icon-4x text-info"></i>
+				</div>
+				<div class="col-sm-10 col-lg-10">
+					<p>     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+			</div>
+		</div>
+	<!-- / ITEM-->
+
+	<!-- ITEM-->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="row">
+				<div class="text-center col-sm-2 col-lg-2">
+					<i class="icon-tablet icon-4x text-info"></i>
+				</div>
+				<div class="col-sm-10 col-lg-10">
+					<p>     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+			</div>
+		</div>
+	<!-- / ITEM-->
+	
+<!-- ITEM-->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="row">
+				<div class="text-center col-sm-2 col-lg-2">
+					<i class="icon-tablet icon-4x text-info"></i>
+				</div>
+				<div class="col-sm-10 col-lg-10">
+					<p>     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+			</div>
+		</div>
+	<!-- / ITEM-->
+	
+	<!-- ITEM-->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="row">
+				<div class="text-center col-sm-2 col-lg-2">
+					<i class="icon-tablet icon-4x text-info"></i>
+				</div>
+				<div class="col-sm-10 col-lg-10">
+					<p>     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+			</div>
+		</div>
+	<!-- / ITEM-->
+
+	<!-- ITEM-->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="row">
+				<div class="text-center col-sm-2 col-lg-2">
+					<i class="icon-tablet icon-4x text-info"></i>
+				</div>
+				<div class="col-sm-10 col-lg-10">
+					<p>     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+			</div>
+		</div>
+	<!-- / ITEM-->
+
+	<!-- ITEM-->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="row">
+				<div class="text-center col-sm-2 col-lg-2">
+					<i class="icon-tablet icon-4x text-info"></i>
+				</div>
+				<div class="col-sm-10 col-lg-10">
+					<p>     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				</div>
+			</div>
+		</div>
+	<!-- / ITEM-->
+		
+		
+</div>
+
+			<div class="row" style="padding-top:30px;">
+				<div class="col-sm-12 col-lg-12 text-center">
+					<div class="page-header">
+						<h3>CHOOSE YOUR PRICING PLAN NOW!</h3>
+					</div>
+				</div>
+			</div>
+   
+
+
       <!-- Example row of columns -->
-      <div class="row">
+      <div class="row" style="margin-top:30px;">
         <div class="col-xs-12 col-sm-4  col-md-4 col-lg-4">
 			<div class="panel panel-success">
 				<div class="panel-heading">
@@ -273,19 +417,17 @@ This template build on DevKit http://www.bootstraptor.com
 			</div> 
 	   </div>
 	</div>
-</div>
-<!-- CONTAINER-->
 
-</section>
 
-<section id="Section-2">
-<div class="container">
+
 	<div class="row">
-		<div class="panel panel-default">
-				<div class="col-12 col-lg-12 panel-heading text-center">
-					<h3>WHAT PEOPLE SAY ABOUT YOUR PRODUCT</h3>
+
+				<div class="col-12 col-lg-12 text-center">
+					<div class="page-header">
+						<h3>WHAT PEOPLE SAY ABOUT YOUR PRODUCT</h3>
+					</div>
 				</div>
-			<div class="panel-body">
+	
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-lg-6">
 						<div class="row">
@@ -340,75 +482,24 @@ This template build on DevKit http://www.bootstraptor.com
 						</div>	
 					</div>
 				</div>
-			</div>
-		</div>
+	
+
 	</div>
- <!-- related projects -->
- <div class="row">
-<div class="panel panel-default">
-	<div class="panel-heading text-center">
-		<h3>PRODUCT SCREENSHOTS</h3>
+	<hr>
+	<div class="page-header text-center">
+		<h3>READY TO BUY? JUST CLICK TO AWESOME CALL TO ACTION BUTTON!</h3>
 	</div>
-<div class="panel-body">
- <!-- related projects -->
+ <!-- call to action -->
+ <div class="well">
 	<div class="row">
-
-		 <!-- ITEM -->
-		 <div class="col-xs-6 col-sm-3 col-lg-3">
-			<div class="thumbnail">
-				<!-- IMAGE CONTAINER-->
-				<img src="http://lorempixel.com/260/195/technics/1" alt=""> 
-				<!--END IMAGE CONTAINER-->
-		
-			</div>
-		<!-- END: THUMBNAIL -->
+		 <div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+			<a class="btn btn-lg btn-danger" href="" title="" >BUY AWESOME PRODUCT NOW!</a>
 		</div>
-		<!-- END ITEM -->
-
-		<!-- ITEM -->
-		 <div class="col-xs-6 col-sm-3  col-lg-3">
-			<div class="thumbnail">
-				<!-- IMAGE CONTAINER-->
-				<img src="http://lorempixel.com/260/195/technics/1" alt=""> 
-				<!--END IMAGE CONTAINER-->
-			</div>
-		<!-- END: THUMBNAIL -->
-		</div>
-		<!-- END ITEM -->
-
-		<!-- ITEM -->
-		 <div class="col-xs-6 col-sm-3  col-lg-3">
-			<div class="thumbnail">
-				<!-- IMAGE CONTAINER-->
-				<img src="http://lorempixel.com/260/195/technics/1" alt=""> 
-				<!--END IMAGE CONTAINER-->
-		
-			</div>
-		<!-- END: THUMBNAIL -->
-		</div>
-		<!-- END ITEM -->
-
-		<!-- ITEM -->
-		 <div class="col-xs-6 col-sm-3  col-lg-3">
-			<div class="thumbnail">
-				<!-- IMAGE CONTAINER-->
-				<img src="http://lorempixel.com/260/195/technics/1" alt=""> 
-				<!--END IMAGE CONTAINER-->
-		
-			</div>
-		<!-- END: THUMBNAIL -->
-		</div>
-		<!-- END ITEM -->
-
 	</div>
-	</div>
-</div>
- <!-- related projects -->
  </div>
-</div> <!-- /container -->
-<!--/ CONTENT -->
-</section>
+ <!-- call to action -->
 
+</div><!-- /.container -->
 
 <!-- FOOTER-->
 <footer>
@@ -459,12 +550,29 @@ This template build on DevKit http://www.bootstraptor.com
     </div>
   
 </div>
-	<hr>
-        <p>© bootstraptor.com Company 2013</p>
-  </div><!-- CONTAINER FOOTER-->
-	  
+	
+
+</div><!-- /.container -->  
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+			
+			<a class="navbar-brand" href="#">YOURSITE.COM</a>
+		  </div>
+		<ul class="nav navbar-nav navbar-right">
+			  <li><a href="#" title=""><i class="icon-twitter"></i></a></li>
+			<li><a href="#" title=""><i class="icon-facebook"></i></a></li>
+			<li><a href="#" title=""><i class="icon-google-plus"></i></a></li>
+			<li><a href="#" title=""><i class="icon-youtube"></i></a></li>	
+			<li><a href="#" title=""><i class="icon-dribbble"></i></a></li>
+			
+		</ul>
+	</div><!-- /.container -->
+</nav>
 </footer>
-</div>
+</div>	<!-- /.wrapper -->
+
 <!-- /end WRAPPER-->
 
     <!-- Le javascript
