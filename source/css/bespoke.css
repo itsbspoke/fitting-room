@@ -19,6 +19,10 @@ ul.nav li a {
 /*-------------- Utility --------------*/
 /*-------------------------------------*/
 
+.f-dropdown.content {
+  max-width: 500px;
+}
+
 .full-width {
   width:100%;
 }
